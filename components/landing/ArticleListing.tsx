@@ -19,9 +19,9 @@ export function ArticleListing() {
   return (
     <section className="py-10 lg:py-14 bg-surface">
       <ContainerContent>
-        <Breadcrumbs className="pb-6" />
-        <div className="mb-8">
-          <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">Tips & Trik</h1>
+        <Breadcrumbs className="pb-2" />
+        <div className="mb-4">
+          <h1 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">Artikel</h1>
           <p className="text-sm text-foreground-secondary mt-1">Artikel dan panduan seputar perlengkapan outdoor</p>
         </div>
 
