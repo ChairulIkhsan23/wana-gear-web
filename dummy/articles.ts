@@ -1,0 +1,48 @@
+export const articles = [
+  {
+    id: 1,
+    slug: "tips-memilih-tenda",
+    title: "Tips Memilih Tenda untuk Pemula",
+    excerpt: "Panduan lengkap memilih tenda yang tepat untuk petualangan pertamamu.",
+    content: "Memilih tenda yang tepat adalah langkah penting...",
+    image: "https://picsum.photos/seed/artikel1/800/400",
+    author: "Tim WanaGear",
+    published_at: "2026-06-15",
+    date: "2026-06-15",
+    readTime: "5 min",
+    category: { id: 1, name: "Tips & Trik", slug: "tips-trik" },
+  },
+  {
+    id: 2,
+    slug: "daftar-gunung-untuk-pemula",
+    title: "5 Gunung di Jawa Barat untuk Pendaki Pemula",
+    excerpt: "Rekomendasi gunung dengan jalur pendakian yang cocok untuk pemula.",
+    content: "Jawa Barat memiliki banyak gunung yang cocok untuk pemula...",
+    image: "https://picsum.photos/seed/artikel2/800/400",
+    author: "Tim WanaGear",
+    published_at: "2026-06-10",
+    date: "2026-06-10",
+    readTime: "4 min",
+    category: { id: 1, name: "Tips & Trik", slug: "tips-trik" },
+  },
+  {
+    id: 3,
+    slug: "packing-list-camping",
+    title: "Packing List Camping 3 Hari 2 Malam",
+    excerpt: "Jangan sampai ada yang ketinggalan! Simak daftar perlengkapan wajib untuk camping.",
+    content: "Sebelum berangkat camping, pastikan kamu sudah menyiapkan...",
+    image: "https://picsum.photos/seed/artikel3/800/400",
+    author: "Tim WanaGear",
+    published_at: "2026-06-05",
+    date: "2026-06-05",
+    readTime: "6 min",
+    category: { id: 1, name: "Tips & Trik", slug: "tips-trik" },
+  },
+]
+
+export const categories = [
+  { id: 1, slug: "camping", name: "Camping", description: "Tenda, Sleeping Bag, Matras", children: [{ id: 11, slug: "tenda", name: "Tenda" }, { id: 12, slug: "sleeping-bag", name: "Sleeping Bag" }] },
+  { id: 2, slug: "hiking", name: "Hiking", description: "Carrier, Sepatu, Trekking Pole", children: [{ id: 21, slug: "carrier", name: "Carrier" }, { id: 22, slug: "sepatu", name: "Sepatu" }] },
+  { id: 3, slug: "cooking", name: "Cooking", description: "Kompor, Nesting, Gas", children: [{ id: 31, slug: "kompor", name: "Kompor" }, { id: 32, slug: "nesting", name: "Nesting" }] },
+  { id: 4, slug: "accessories", name: "Accessories", description: "Headlamp, Jas Hujan, Sarung Tangan", children: [{ id: 41, slug: "headlamp", name: "Headlamp" }, { id: 42, slug: "jas-hujan", name: "Jas Hujan" }] },
+]

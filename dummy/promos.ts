@@ -1,0 +1,26 @@
+export const promos = [
+  {
+    id: 1,
+    title: "Promo Grand Opening! Diskon 20%",
+    description: "Rayakan pembukaan WanaGear dengan diskon spesial untuk semua perlengkapan outdoor. Periode terbatas!",
+    image: "https://picsum.photos/seed/promo1/800/400",
+    cta: "Lihat Promo",
+    discount: "20%",
+    category: "Promo Spesial",
+    validUntil: "2026-12-31",
+    href: "/promo/grand-opening",
+    isNew: true,
+  },
+  {
+    id: 2,
+    title: "Paket Hemat Camping 3 Hari 2 Malam",
+    description: "Dapatkan paket lengkap tenda, sleeping bag, matras, dan kompor portable dengan harga spesial.",
+    image: "https://picsum.photos/seed/promo2/800/400",
+    cta: "Pesan Sekarang",
+    discount: "15%",
+    category: "Paket Hemat",
+    validUntil: "2026-12-31",
+    href: "/paket/camping-hemat",
+    isNew: true,
+  },
+]
