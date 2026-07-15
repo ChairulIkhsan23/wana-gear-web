@@ -46,7 +46,6 @@ export function Breadcrumbs({ className }: BreadcrumbsProps) {
         <li>
           <Link href="/" className={cn("flex items-center gap-1.5 text-foreground-secondary hover:text-foreground transition-colors", crumbs.length > 0 && "pr-1.5")}>
             <Home className="w-4 h-4" />
-            {crumbs.length === 0 && <span className="font-medium">Beranda</span>}
           </Link>
         </li>
         {crumbs.map((crumb) => (

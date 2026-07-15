@@ -196,7 +196,7 @@ export function CategoryPage({ slug }: { slug: string }) {
   )
 
   return (
-    <section className="py-8 lg:py-10 bg-surface min-h-screen">
+    <section className="pt-4 pb-8 lg:pt-6 lg:pb-10 bg-surface min-h-screen">
       <ContainerContent>
         <Breadcrumbs />
 
@@ -308,7 +308,7 @@ export function CategoryPage({ slug }: { slug: string }) {
             ) : (
               <>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
-                  {products.map((product: { id: number }) => (
+                  {products.map((product: any) => (
                     <ProductCard key={product.id} product={product} />
                   ))}
                 </div>

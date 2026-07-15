@@ -44,23 +44,15 @@ export function ArticleDetail({ articleId }: { articleId: string }) {
   const otherArticles = articles.filter((a) => String(a.id) !== articleId).slice(0, 4)
 
   return (
-    <section className="py-8 lg:py-10 bg-surface">
+    <section className="pt-4 pb-8 lg:pt-6 lg:pb-10 bg-surface">
       <ContainerContent>
-        <Breadcrumbs className="py-2" />
-        
+        <Breadcrumbs className="mb-4" />
+
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Main Content */}
           <article className="lg:col-span-8">
-<header className="mb-8">
-              <Link
-                href="/artikel"
-                className="inline-flex items-center gap-1.5 text-sm text-foreground-secondary hover:text-foreground transition-colors mb-4"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Kembali ke Artikel
-              </Link>
-
-              <div className="flex items-center gap-2 mb-4">
+            <header className="mb-8">
+              <div className="flex items-center gap-2 mb-2">
                 <span className="inline-flex px-3 py-1 text-[11px] font-bold uppercase tracking-widest bg-emerald-600 text-white rounded">
                   {article.category.name}
                 </span>
@@ -112,7 +104,7 @@ export function ArticleDetail({ articleId }: { articleId: string }) {
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-4">
                   <span className="text-sm font-medium text-foreground">Bagikan:</span>
-                  <div className="flex gap-2">
+                  <div className="flex items-center gap-2">
                     <button
                       type="button"
                       className="flex items-center justify-center w-9 h-9 rounded-lg border border-border hover:bg-muted transition-colors"
@@ -141,7 +133,13 @@ export function ArticleDetail({ articleId }: { articleId: string }) {
                     >
                       <FaInstagram className="w-4 h-4 text-pink-600" />
                     </button>
-                    <Share2 className="w-4 h-4 text-foreground-secondary" />
+                    <button
+                      type="button"
+                      className="flex items-center justify-center w-9 h-9 rounded-lg border border-border hover:bg-muted transition-colors"
+                      aria-label="Salin tautan"
+                    >
+                      <Share2 className="w-4 h-4 text-foreground-secondary" />
+                    </button>
                   </div>
                 </div>
               </div>
@@ -184,13 +182,13 @@ export function ArticleDetail({ articleId }: { articleId: string }) {
               {/* Comments List */}
               <div className="space-y-6">
                 {comments.map((comment) => (
-                  <div key={comment.id} className="flex gap-3">
+                  <div key={comment.id} className="flex items-start gap-3">
                     <Image
                       src={comment.avatar}
                       alt={comment.author}
                       width={40}
                       height={40}
-                      className="rounded-full shrink-0 object-cover"
+                      className="rounded-full shrink-0 object-cover w-10 h-10"
                     />
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
